@@ -1,0 +1,1677 @@
+Started GET "/" for 127.0.0.1 at 2023-02-03 23:50:12 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Users/Red/.gem/ruby/3.2.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Users/Red/.gem/ruby/3.2.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 45.0ms | Allocations: 663)
+Completed 200 OK in 192ms (Views: 99.1ms | ActiveRecord: 0.0ms | Allocations: 5686)
+
+
+Started GET "/v1/contacts" for 127.0.0.1 at 2023-02-04 00:13:41 +0000
+  [1m[35m (26.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (15.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20230203235151_create_contacts.rb
+
+
+):
+  
+activerecord (7.0.4.2) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4.2) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4.2) lib/active_support/file_update_checker.rb:83:in `execute'
+activesupport (7.0.4.2) lib/active_support/file_update_checker.rb:93:in `execute_if_updated'
+activerecord (7.0.4.2) lib/active_record/migration.rb:599:in `block in call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/favicon.ico" for 127.0.0.1 at 2023-02-04 00:13:48 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20230203235151_create_contacts.rb
+
+
+):
+  
+activerecord (7.0.4.2) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4.2) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4.2) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4.2) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/v1/contact" for 127.0.0.1 at 2023-02-04 00:13:58 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20230203235151_create_contacts.rb
+
+
+):
+  
+activerecord (7.0.4.2) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4.2) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4.2) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4.2) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/favicon.ico" for 127.0.0.1 at 2023-02-04 00:13:58 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20230203235151_create_contacts.rb
+
+
+):
+  
+activerecord (7.0.4.2) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4.2) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4.2) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4.2) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/v1/contacts" for 127.0.0.1 at 2023-02-04 00:14:38 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20230203235151_create_contacts.rb
+
+
+):
+  
+activerecord (7.0.4.2) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4.2) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4.2) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4.2) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/favicon.ico" for 127.0.0.1 at 2023-02-04 00:14:39 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20230203235151_create_contacts.rb
+
+
+):
+  
+activerecord (7.0.4.2) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4.2) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4.2) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4.2) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/v1/contacts" for 127.0.0.1 at 2023-02-04 00:18:27 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20230203235151_create_contacts.rb
+
+
+):
+  
+activerecord (7.0.4.2) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4.2) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4.2) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4.2) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/favicon.ico" for 127.0.0.1 at 2023-02-04 00:18:28 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20230203235151_create_contacts.rb
+
+
+):
+  
+activerecord (7.0.4.2) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4.2) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4.2) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4.2) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/v1/contacts" for 127.0.0.1 at 2023-02-04 05:15:33 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20230203235151_create_contacts.rb
+
+
+):
+  
+activerecord (7.0.4.2) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4.2) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4.2) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4.2) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/favicon.ico" for 127.0.0.1 at 2023-02-04 05:15:35 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20230203235151_create_contacts.rb
+
+
+):
+  
+activerecord (7.0.4.2) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4.2) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4.2) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4.2) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/v1/contacts" for 127.0.0.1 at 2023-02-04 05:18:29 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20230203235151_create_contacts.rb
+
+
+):
+  
+activerecord (7.0.4.2) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4.2) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4.2) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4.2) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/favicon.ico" for 127.0.0.1 at 2023-02-04 05:18:29 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20230203235151_create_contacts.rb
+
+
+):
+  
+activerecord (7.0.4.2) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4.2) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4.2) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4.2) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[35m (45.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (15.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4932306482698817985)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateContacts (20230203235151)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(4932306482698817985)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4932306482698817985)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateContacts (20230203235151)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(4932306482698817985)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4932306482698817985)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateContacts (20230203235151)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(4932306482698817985)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4932306482698817985)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateContacts (20230203235151)
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (22.3ms)[0m  [1m[35mCREATE TABLE "contacts" ("id" bigserial primary key, "username" character varying, "number" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (3.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230203235151"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (3.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-02-04 05:49:09.471462"], ["updated_at", "2023-02-04 05:49:09.471462"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4932306482698817985)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/v1/contacts" for 127.0.0.1 at 2023-02-04 05:49:40 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20230203235151_create_contacts.rb
+
+
+):
+  
+activerecord (7.0.4.2) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4.2) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4.2) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4.2) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/favicon.ico" for 127.0.0.1 at 2023-02-04 05:49:41 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20230203235151_create_contacts.rb
+
+
+):
+  
+activerecord (7.0.4.2) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4.2) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4.2) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4.2) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/rails/actions" for 127.0.0.1 at 2023-02-04 05:49:50 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateContacts (20230203235151)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE TABLE "contacts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "number" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230203235151"]]
+  [1m[36mTRANSACTION (10.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-02-04 05:49:50.756162"], ["updated_at", "2023-02-04 05:49:50.756162"]]
+  [1m[36mTRANSACTION (9.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/v1/contacts" for 127.0.0.1 at 2023-02-04 05:49:50 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by V1::ContactsController#index as HTML
+  [1m[36mContact Load (0.4ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
+  ↳ app/controllers/v1/contacts_controller.rb:5:in `index'
+Completed 200 OK in 24ms (Views: 3.5ms | ActiveRecord: 0.4ms | Allocations: 1556)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2023-02-04 05:49:51 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/v1/contacts" for 127.0.0.1 at 2023-02-04 05:50:00 +0000
+Processing by V1::ContactsController#index as HTML
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
+  ↳ app/controllers/v1/contacts_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 648)
+
+
+Started GET "/v1/contacts" for 127.0.0.1 at 2023-02-04 06:45:16 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20230204061255_create_whatsapp_bots.rb
+
+
+):
+  
+activerecord (7.0.4.2) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4.2) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4.2) lib/active_support/file_update_checker.rb:83:in `execute'
+activesupport (7.0.4.2) lib/active_support/file_update_checker.rb:93:in `execute_if_updated'
+activerecord (7.0.4.2) lib/active_record/migration.rb:599:in `block in call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/v1/contacts" for 127.0.0.1 at 2023-02-04 06:47:50 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20230204061255_create_whatsapp_bots.rb
+
+
+):
+  
+activerecord (7.0.4.2) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4.2) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4.2) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4.2) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/v1/contacts" for 127.0.0.1 at 2023-02-04 06:49:57 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (C:/Users/Red/dondo-bot/app/controllers/v1/contacts_controller.rb:30: syntax error, unexpected end-of-input):
+  
+app/controllers/v1/contacts_controller.rb:30: syntax error, unexpected end-of-input
+app/controllers/v1/contacts_controller.rb:30: syntax error, unexpected end-of-input
+app/controllers/v1/contacts_controller.rb:30: syntax error, unexpected end-of-input
+Started GET "/v1/contacts" for 127.0.0.1 at 2023-02-04 06:50:37 +0000
+  
+SyntaxError (C:/Users/Red/dondo-bot/app/controllers/v1/contacts_controller.rb:30: syntax error, unexpected end-of-input):
+  
+app/controllers/v1/contacts_controller.rb:30: syntax error, unexpected end-of-input
+app/controllers/v1/contacts_controller.rb:30: syntax error, unexpected end-of-input
+app/controllers/v1/contacts_controller.rb:30: syntax error, unexpected end-of-input
+Started GET "/v1/contacts" for 127.0.0.1 at 2023-02-04 06:51:05 +0000
+  
+SyntaxError (C:/Users/Red/dondo-bot/app/controllers/v1/contacts_controller.rb:33: syntax error, unexpected end-of-input):
+  
+app/controllers/v1/contacts_controller.rb:33: syntax error, unexpected end-of-input
+app/controllers/v1/contacts_controller.rb:33: syntax error, unexpected end-of-input
+app/controllers/v1/contacts_controller.rb:33: syntax error, unexpected end-of-input
+Started GET "/v1/contacts" for 127.0.0.1 at 2023-02-04 06:51:59 +0000
+Processing by V1::ContactsController#index as HTML
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
+  ↳ app/controllers/v1/contacts_controller.rb:5:in `index'
+Completed 200 OK in 8ms (Views: 3.0ms | ActiveRecord: 0.4ms | Allocations: 1433)
+
+
+Started GET "/v1/contacts" for 127.0.0.1 at 2023-02-04 06:52:07 +0000
+Processing by V1::ContactsController#index as */*
+  [1m[36mContact Load (0.1ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
+  ↳ app/controllers/v1/contacts_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 656)
+
+
+Started POST "/v1/contacts" for 127.0.0.1 at 2023-02-04 06:53:28 +0000
+Processing by V1::ContactsController#create as */*
+  Parameters: {"username"=>"Red", "number"=>"=233", "contact"=>{"username"=>"Red", "number"=>"=233"}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 8.8ms | Allocations: 399)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: contacts):
+  
+app/controllers/v1/contacts_controller.rb:29:in `contact_params'
+app/controllers/v1/contacts_controller.rb:10:in `create'
+Started POST "/v1/contacts" for 127.0.0.1 at 2023-02-04 06:54:43 +0000
+Processing by V1::ContactsController#create as */*
+  Parameters: {"username"=>"Red", "number"=>"=233", "timestamp"=>"1", "contact"=>{"username"=>"Red", "number"=>"=233"}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 413)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: contacts):
+  
+app/controllers/v1/contacts_controller.rb:29:in `contact_params'
+app/controllers/v1/contacts_controller.rb:10:in `create'
+Started POST "/v1/contacts" for 127.0.0.1 at 2023-02-04 06:55:02 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by V1::ContactsController#create as */*
+  Parameters: {"username"=>"Red", "number"=>"=233", "contact"=>{"username"=>"Red", "number"=>"=233"}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 413)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: contacts):
+  
+app/controllers/v1/contacts_controller.rb:29:in `contact_params'
+app/controllers/v1/contacts_controller.rb:10:in `create'
+Started POST "/v1/contacts" for 127.0.0.1 at 2023-02-04 06:56:14 +0000
+Processing by V1::ContactsController#create as */*
+  Parameters: {"username"=>"Red", "number"=>"=233", "contact"=>{"username"=>"Red", "number"=>"=233"}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 413)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: contacts):
+  
+app/controllers/v1/contacts_controller.rb:29:in `contact_params'
+app/controllers/v1/contacts_controller.rb:10:in `create'
+Started POST "/v1/contacts" for 127.0.0.1 at 2023-02-04 06:57:41 +0000
+Processing by V1::ContactsController#create as */*
+  Parameters: {"username"=>"Red", "number"=>"+233", "contact"=>{"username"=>"Red", "number"=>"+233"}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 413)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: contacts):
+  
+app/controllers/v1/contacts_controller.rb:29:in `contact_params'
+app/controllers/v1/contacts_controller.rb:10:in `create'
+Started DELETE "/v1/contacts" for 127.0.0.1 at 2023-02-04 06:58:23 +0000
+  
+ActionController::RoutingError (No route matches [DELETE] "/v1/contacts"):
+  
+Started DELETE "/v1/contacts/1" for 127.0.0.1 at 2023-02-04 06:58:30 +0000
+Processing by V1::ContactsController#destroy as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mContact Load (0.7ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = ? ORDER BY "contacts"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/v1/contacts_controller.rb:18:in `destroy'
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.3ms | Allocations: 1303)
+
+
+  
+NoMethodError (undefined method `destroy' for nil:NilClass):
+  
+app/controllers/v1/contacts_controller.rb:19:in `destroy'
+Started DELETE "/v1/contacts/" for 127.0.0.1 at 2023-02-04 06:58:50 +0000
+  
+ActionController::RoutingError (No route matches [DELETE] "/v1/contacts"):
+  
+Started GET "/v1/contacts/" for 127.0.0.1 at 2023-02-04 06:58:57 +0000
+Processing by V1::ContactsController#index as */*
+  [1m[36mContact Load (0.1ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
+  ↳ app/controllers/v1/contacts_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 652)
+
+
+Started GET "/v1/contacts" for 127.0.0.1 at 2023-02-04 07:05:27 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by V1::ContactsController#index as */*
+  [1m[36mContact Load (0.1ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
+  ↳ app/controllers/v1/contacts_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 675)
+
+
+Started POST "/v1/contacts" for 127.0.0.1 at 2023-02-04 07:05:36 +0000
+Processing by V1::ContactsController#create as */*
+  Parameters: {"username"=>"Red", "number"=>"+233", "contact"=>{"username"=>"Red", "number"=>"+233"}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 413)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: contacts):
+  
+app/controllers/v1/contacts_controller.rb:29:in `contact_params'
+app/controllers/v1/contacts_controller.rb:10:in `create'
+Started POST "/v1/contacts" for 127.0.0.1 at 2023-02-04 07:06:03 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by V1::ContactsController#create as */*
+  Parameters: {"username"=>"Red", "number"=>"+233", "contact"=>{"username"=>"Red", "number"=>"+233"}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 413)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: contacts):
+  
+app/controllers/v1/contacts_controller.rb:29:in `contact_params'
+app/controllers/v1/contacts_controller.rb:10:in `create'
+Started POST "/v1/contacts" for 127.0.0.1 at 2023-02-04 07:07:24 +0000
+Processing by V1::ContactsController#create as */*
+  Parameters: {"username"=>"Red", "number"=>"+233", "contact"=>{"username"=>"Red", "number"=>"+233"}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 1.0ms | Allocations: 372)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: contacts):
+  
+app/controllers/v1/contacts_controller.rb:29:in `contact_params'
+app/controllers/v1/contacts_controller.rb:10:in `create'
+Started GET "/v1/contacts" for 127.0.0.1 at 2023-02-04 09:15:42 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/v1/contacts"):
+  
+Started GET "/v1/contacts" for 127.0.0.1 at 2023-02-04 09:18:13 +0000
+Processing by V1::ContactsController#index as HTML
+  [1m[36mContact Load (3.8ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
+  ↳ app/controllers/v1/contacts_controller.rb:5:in `index'
+Completed 200 OK in 27ms (Views: 2.7ms | ActiveRecord: 3.8ms | Allocations: 1680)
+
+
+Started POST "/twilio/incoming" for 127.0.0.1 at 2023-02-04 09:39:11 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20230204092956_create_v1_whatsapp_bots.rb
+
+
+):
+  
+activerecord (7.0.4.2) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4.2) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4.2) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4.2) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4932306482698817985)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateV1WhatsappBots (20230204092956)
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (35.8ms)[0m  [1m[35mCREATE TABLE "v1_whatsapp_bots" ("id" bigserial primary key, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (4.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230204092956"]]
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (3.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4932306482698817985)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/twilio/incoming" for 127.0.0.1 at 2023-02-04 09:40:09 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (uninitialized constant WhatsappBotController):
+  
+Started GET "/twilio/incoming" for 127.0.0.1 at 2023-02-04 09:40:38 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/twilio/incoming"):
+  
+Started POST "/twilio/incoming" for 127.0.0.1 at 2023-02-04 09:41:50 +0000
+  
+ActionController::RoutingError (uninitialized constant WhatsappBotController):
+  
+Started POST "/twilio" for 127.0.0.1 at 2023-02-04 09:41:56 +0000
+  
+ActionController::RoutingError (No route matches [POST] "/twilio"):
+  
+Started POST "/twilio/incoming" for 127.0.0.1 at 2023-02-04 09:42:00 +0000
+  
+ActionController::RoutingError (uninitialized constant WhatsappBotController):
+  
+Started GET "/v1/contacts" for 127.0.0.1 at 2023-02-04 09:42:49 +0000
+Processing by V1::ContactsController#index as HTML
+  [1m[36mContact Load (1.1ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
+  ↳ app/controllers/v1/contacts_controller.rb:5:in `index'
+Completed 200 OK in 19ms (Views: 2.7ms | ActiveRecord: 1.1ms | Allocations: 3439)
+
+
+Started POST "/twilio/incoming" for 127.0.0.1 at 2023-02-04 09:45:17 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (uninitialized constant WhatsappBotController):
+  
+Started POST "/twilio/incoming" for 127.0.0.1 at 2023-02-04 09:47:47 +0000
+  
+ActionController::RoutingError (uninitialized constant WhatsappBotController):
+  
+Started POST "/twilio/incoming" for 127.0.0.1 at 2023-02-04 09:49:09 +0000
+  
+ActionController::RoutingError (No route matches [POST] "/twilio/incoming"):
+  
+Started GET "/whatsapp_bot" for 127.0.0.1 at 2023-02-04 09:49:32 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/whatsapp_bot"):
+  
+Started GET "/v1/whatsapp_bot" for 127.0.0.1 at 2023-02-04 09:49:45 +0000
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for V1::WhatsappBotController):
+  
+actionpack (7.0.4.2) lib/abstract_controller/base.rb:146:in `process'
+actionpack (7.0.4.2) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4.2) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4.2) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.6.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.6.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.6.2) lib/rack/head.rb:12:in `call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/v1/whatsapp_bot" for 127.0.0.1 at 2023-02-04 09:50:38 +0000
+Processing by V1::WhatsappBotController#index as */*
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 195)
+
+
+  
+NameError (uninitialized constant V1::WhatsappBotController::Twilio):
+  
+app/controllers/v1/whatsapp_bot_controller.rb:9:in `index'
+Started GET "/v1/whatsapp_bot" for 127.0.0.1 at 2023-02-04 09:53:03 +0000
+  
+NameError (uninitialized constant V1::WhatsappBotController::ModuleName):
+  
+app/controllers/v1/whatsapp_bot_controller.rb:3:in `<class:WhatsappBotController>'
+app/controllers/v1/whatsapp_bot_controller.rb:1:in `<main>'
+Started GET "/v1/whatsapp_bot" for 127.0.0.1 at 2023-02-04 09:54:01 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+NameError (uninitialized constant V1::WhatsappBotController::ModuleName):
+  
+app/controllers/v1/whatsapp_bot_controller.rb:3:in `<class:WhatsappBotController>'
+app/controllers/v1/whatsapp_bot_controller.rb:1:in `<main>'
+Started GET "/v1/whatsapp_bot" for 127.0.0.1 at 2023-02-04 09:54:04 +0000
+  
+NameError (uninitialized constant V1::WhatsappBotController::ModuleName):
+  
+app/controllers/v1/whatsapp_bot_controller.rb:3:in `<class:WhatsappBotController>'
+app/controllers/v1/whatsapp_bot_controller.rb:1:in `<main>'
+Started GET "/v1/whatsapp_bot" for 127.0.0.1 at 2023-02-04 09:54:23 +0000
+  
+NameError (uninitialized constant V1::WhatsappBotController::ModuleName):
+  
+app/controllers/v1/whatsapp_bot_controller.rb:3:in `<class:WhatsappBotController>'
+app/controllers/v1/whatsapp_bot_controller.rb:1:in `<main>'
+Started GET "/v1/whatsapp_bot" for 127.0.0.1 at 2023-02-04 09:55:04 +0000
+Processing by V1::WhatsappBotController#index as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 161)
+
+
+  
+NameError (uninitialized constant V1::WhatsappBotController::Twilio):
+  
+app/controllers/v1/whatsapp_bot_controller.rb:9:in `index'
+Started GET "/v1/whatsapp_bot" for 127.0.0.1 at 2023-02-04 09:55:32 +0000
+  
+SyntaxError (C:/Users/Red/dondo-bot/app/controllers/v1/whatsapp_bot_controller.rb:24: syntax error, unexpected `end'):
+  
+app/controllers/v1/whatsapp_bot_controller.rb:24: syntax error, unexpected `end'
+app/controllers/v1/whatsapp_bot_controller.rb:24: syntax error, unexpected `end'
+Started GET "/v1/whatsapp_bot" for 127.0.0.1 at 2023-02-04 09:57:24 +0000
+Processing by V1::WhatsappBotController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 167)
+
+
+  
+NameError (undefined local variable or method `message_body' for #<V1::WhatsappBotController:0x0000000002bb10>):
+  
+app/controllers/v1/whatsapp_bot_controller.rb:8:in `index'
+Started GET "/v1/whatsapp_bot" for 127.0.0.1 at 2023-02-04 09:59:23 +0000
+Processing by V1::WhatsappBotController#index as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 164)
+
+
+  
+NameError (uninitialized constant V1::WhatsappBotController::Twilio):
+  
+app/controllers/v1/whatsapp_bot_controller.rb:16:in `index'
+Started GET "/v1/whatsapp_bot" for 127.0.0.1 at 2023-02-04 10:02:39 +0000
+Processing by V1::WhatsappBotController#index as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 160)
+
+
+  
+NameError (uninitialized constant V1::WhatsappBotController::Twilio):
+  
+app/controllers/v1/whatsapp_bot_controller.rb:9:in `index'
+Started GET "/v1/whatsapp_bot" for 127.0.0.1 at 2023-02-04 10:02:48 +0000
+Processing by V1::WhatsappBotController#index as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 160)
+
+
+  
+NameError (uninitialized constant V1::WhatsappBotController::Twilio):
+  
+app/controllers/v1/whatsapp_bot_controller.rb:9:in `index'
+Started GET "/v1/whatsapp_bot" for 127.0.0.1 at 2023-02-04 10:05:46 +0000
+  
+NameError (uninitialized constant V1::WhatsappBotController::MyModule::Twilio):
+  
+app/controllers/v1/whatsapp_bot_controller.rb:5:in `<module:MyModule>'
+app/controllers/v1/whatsapp_bot_controller.rb:4:in `<class:WhatsappBotController>'
+app/controllers/v1/whatsapp_bot_controller.rb:1:in `<main>'
+Started GET "/v1/whatsapp_bot" for 127.0.0.1 at 2023-02-04 10:06:19 +0000
+Processing by V1::WhatsappBotController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 163)
+
+
+  
+NameError (uninitialized constant V1::WhatsappBotController::Twilio):
+  
+app/controllers/v1/whatsapp_bot_controller.rb:20:in `index'
+Started GET "/v1/whatsapp_bot" for 127.0.0.1 at 2023-02-04 10:08:07 +0000
+  
+SyntaxError (C:/Users/Red/dondo-bot/app/controllers/v1/whatsapp_bot_controller.rb:28: syntax error, unexpected `end'):
+  
+app/controllers/v1/whatsapp_bot_controller.rb:28: syntax error, unexpected `end'
+app/controllers/v1/whatsapp_bot_controller.rb:28: syntax error, unexpected `end'
+Started GET "/v1/whatsapp_bot" for 127.0.0.1 at 2023-02-04 10:08:30 +0000
+  
+SyntaxError (C:/Users/Red/dondo-bot/app/controllers/v1/whatsapp_bot_controller.rb:28: syntax error, unexpected `end'):
+  
+app/controllers/v1/whatsapp_bot_controller.rb:28: syntax error, unexpected `end'
+app/controllers/v1/whatsapp_bot_controller.rb:28: syntax error, unexpected `end'
+Started GET "/v1/whatsapp_bot" for 127.0.0.1 at 2023-02-04 10:08:33 +0000
+  
+SyntaxError (C:/Users/Red/dondo-bot/app/controllers/v1/whatsapp_bot_controller.rb:28: syntax error, unexpected `end'):
+  
+app/controllers/v1/whatsapp_bot_controller.rb:28: syntax error, unexpected `end'
+app/controllers/v1/whatsapp_bot_controller.rb:28: syntax error, unexpected `end'
+Started GET "/v1/whatsapp_bot" for 127.0.0.1 at 2023-02-04 10:08:36 +0000
+Processing by V1::WhatsappBotController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 274)
+
+
+  
+NoMethodError (undefined method `to_xml' for #<ActionDispatch::Response:0x0000026ea2a27318 @mon_data=#<Monitor:0x0000026ea273bcf8>, @mon_data_owner_object_id=149060, @header={"X-Frame-Options"=>"SAMEORIGIN", "X-XSS-Protection"=>"0", "X-Content-Type-Options"=>"nosniff", "X-Download-Options"=>"noopen", "X-Permitted-Cross-Domain-Policies"=>"none", "Referrer-Policy"=>"strict-origin-when-cross-origin"}, @stream=#<ActionDispatch::Response::Buffer:0x0000026e9fc318c8 @response=#<ActionDispatch::Response:0x0000026ea2a27318 ...>, @buf=[], @closed=false, @str_body=nil>, @status=200, @cv=#<MonitorMixin::ConditionVariable:0x0000026ea273bc80 @monitor=#<Monitor:0x0000026ea273bcf8>, @cond=#<Thread::ConditionVariable:0x0000026ea273bc58>>, @committed=false, @sending=false, @sent=false, @cache_control={}, @request=#<ActionDispatch::Request GET "http://127.0.0.1:3000/v1/whatsapp_bot" for 127.0.0.1>>):
+  
+app/controllers/v1/whatsapp_bot_controller.rb:26:in `index'
+Started GET "/v1/whatsapp_bot" for 127.0.0.1 at 2023-02-04 10:10:42 +0000
+  
+SyntaxError (C:/Users/Red/dondo-bot/app/controllers/v1/whatsapp_bot_controller.rb:17: syntax error, unexpected end-of-input):
+  
+app/controllers/v1/whatsapp_bot_controller.rb:17: syntax error, unexpected end-of-input
+app/controllers/v1/whatsapp_bot_controller.rb:17: syntax error, unexpected end-of-input
+Started GET "/v1/whatsapp_bot" for 127.0.0.1 at 2023-02-04 10:12:29 +0000
+  
+SyntaxError (C:/Users/Red/dondo-bot/app/controllers/v1/whatsapp_bot_controller.rb:19: syntax error, unexpected end-of-input):
+  
+app/controllers/v1/whatsapp_bot_controller.rb:19: syntax error, unexpected end-of-input
+app/controllers/v1/whatsapp_bot_controller.rb:19: syntax error, unexpected end-of-input
+Started GET "/v1/whatsapp_bot" for 127.0.0.1 at 2023-02-04 10:12:50 +0000
+  
+SyntaxError (C:/Users/Red/dondo-bot/app/controllers/v1/whatsapp_bot_controller.rb:19: syntax error, unexpected end-of-input
+  end
+     ^
+):
+  
+app/controllers/v1/whatsapp_bot_controller.rb:19: syntax error, unexpected end-of-input
+app/controllers/v1/whatsapp_bot_controller.rb:19: syntax error, unexpected end-of-input
+Started GET "/v1/whatsapp_bot" for 127.0.0.1 at 2023-02-04 10:13:29 +0000
+Processing by V1::WhatsappBotController#index as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 168)
+
+
+  
+LoadError (cannot load such file -- twilio-ruby):
+  
+app/controllers/v1/whatsapp_bot_controller.rb:5:in `index'
+Started GET "/v1/whatsapp_bot" for 127.0.0.1 at 2023-02-04 10:13:43 +0000
+Processing by V1::WhatsappBotController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 107)
+
+
+  
+LoadError (cannot load such file -- twilio-ruby):
+  
+app/controllers/v1/whatsapp_bot_controller.rb:5:in `index'
+Started GET "/v1/whatsapp_bot" for 127.0.0.1 at 2023-02-04 10:13:46 +0000
+Processing by V1::WhatsappBotController#index as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 107)
+
+
+  
+LoadError (cannot load such file -- twilio-ruby):
+  
+app/controllers/v1/whatsapp_bot_controller.rb:5:in `index'
+Started GET "/v1/whatsapp_bot" for 127.0.0.1 at 2023-02-04 10:13:51 +0000
+Processing by V1::WhatsappBotController#index as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 147)
+
+
+  
+NameError (uninitialized constant V1::WhatsappBotController::Twilio):
+  
+app/controllers/v1/whatsapp_bot_controller.rb:6:in `index'
+Started GET "/v1/whatsapp_bot" for 127.0.0.1 at 2023-02-04 10:14:43 +0000
+Processing by V1::WhatsappBotController#index as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 163)
+
+
+  
+NameError (uninitialized constant V1::WhatsappBotController::Twilio):
+  
+app/controllers/v1/whatsapp_bot_controller.rb:16:in `index'
+Started GET "/v1/whatsapp_bot" for 127.0.0.1 at 2023-02-04 10:15:49 +0000
+Processing by V1::WhatsappBotController#index as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 163)
+
+
+  
+NameError (uninitialized constant V1::WhatsappBotController::Twilio):
+  
+app/controllers/v1/whatsapp_bot_controller.rb:16:in `index'
+Started GET "/v1/whatsapp_bot" for 127.0.0.1 at 2023-02-04 10:17:18 +0000
+Processing by V1::WhatsappBotController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 163)
+
+
+  
+NameError (uninitialized constant V1::WhatsappBotController::Twilio):
+  
+app/controllers/v1/whatsapp_bot_controller.rb:16:in `index'
+Started GET "/v1/whatsapp_bot" for 127.0.0.1 at 2023-02-04 10:17:49 +0000
+  
+SyntaxError (C:/Users/Red/dondo-bot/app/controllers/v1/whatsapp_bot_controller.rb:16: syntax error, unexpected instance variable
+    @response = @Twilio::@TwiML::@MessagingResponse.new
+                         ^~~~~~
+):
+  
+app/controllers/v1/whatsapp_bot_controller.rb:16: syntax error, unexpected instance variable
+app/controllers/v1/whatsapp_bot_controller.rb:16: syntax error, unexpected instance variable
+Started GET "/v1/whatsapp_bot" for 127.0.0.1 at 2023-02-04 10:18:06 +0000
+Processing by V1::WhatsappBotController#index as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 166)
+
+
+  
+TypeError (nil is not a class/module):
+  
+app/controllers/v1/whatsapp_bot_controller.rb:16:in `index'
+Started GET "/v1/whatsapp_bot" for 127.0.0.1 at 2023-02-04 10:18:26 +0000
+  
+SyntaxError (C:/Users/Red/dondo-bot/app/controllers/v1/whatsapp_bot_controller.rb:16: syntax error, unexpected ':', expecting `end' or dummy end
+    @response = Twilio: :TwiML: :MessagingResponse.n...
+                      ^
+):
+  
+app/controllers/v1/whatsapp_bot_controller.rb:16: syntax error, unexpected ':', expecting `end' or dummy end
+app/controllers/v1/whatsapp_bot_controller.rb:16: syntax error, unexpected ':', expecting `end' or dummy end
+Started GET "/v1/whatsapp_bot" for 127.0.0.1 at 2023-02-04 10:18:59 +0000
+Processing by V1::WhatsappBotController#index as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 163)
+
+
+  
+NameError (uninitialized constant V1::WhatsappBotController::Twilio):
+  
+app/controllers/v1/whatsapp_bot_controller.rb:16:in `index'
+Started GET "/v1/whatsapp_bot" for 127.0.0.1 at 2023-02-04 10:23:56 +0000
+Processing by V1::WhatsappBotController#index as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 146)
+
+
+  
+NameError (uninitialized constant V1::WhatsappBotController::Twilio):
+  
+app/controllers/v1/whatsapp_bot_controller.rb:26:in `index'
+Started GET "/v1/whatsapp_bot" for 127.0.0.1 at 2023-02-04 10:26:39 +0000
+  
+NameError (uninitialized constant V1::WhatsappBotController::Twilio):
+  
+app/controllers/v1/whatsapp_bot_controller.rb:4:in `<class:WhatsappBotController>'
+app/controllers/v1/whatsapp_bot_controller.rb:1:in `<main>'
+Started GET "/v1/whatsapp_bot" for 127.0.0.1 at 2023-02-04 10:27:33 +0000
+  
+NameError (uninitialized constant Twilio):
+  
+app/controllers/v1/whatsapp_bot_controller.rb:1:in `<main>'
+Started GET "/v1/whatsapp_bot" for 127.0.0.1 at 2023-02-04 10:29:28 +0000
+  
+SyntaxError (C:/Users/Red/dondo-bot/app/controllers/v1/whatsapp_bot_controller.rb:33: dynamic constant assignment
+    TWILIO_CLIENT = Twilio::REST::Client.new(
+    ^~~~~~~~~~~~~
+):
+  
+app/controllers/v1/whatsapp_bot_controller.rb:33: dynamic constant assignment
+app/controllers/v1/whatsapp_bot_controller.rb:33: dynamic constant assignment
+Started GET "/v1/whatsapp_bot" for 127.0.0.1 at 2023-02-04 10:31:49 +0000
+  
+SyntaxError (C:/Users/Red/dondo-bot/app/controllers/v1/whatsapp_bot_controller.rb:39: syntax error, unexpected `end'):
+  
+app/controllers/v1/whatsapp_bot_controller.rb:39: syntax error, unexpected `end'
+app/controllers/v1/whatsapp_bot_controller.rb:39: syntax error, unexpected `end'
+Started GET "/v1/whatsapp_bot" for 127.0.0.1 at 2023-02-04 10:32:29 +0000
+Processing by V1::WhatsappBotController#index as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 146)
+
+
+  
+NameError (uninitialized constant V1::WhatsappBotController::Twilio):
+  
+app/controllers/v1/whatsapp_bot_controller.rb:27:in `index'
+Started GET "/v1/whatsapp_bot" for 127.0.0.1 at 2023-02-04 10:33:17 +0000
+  
+SyntaxError (C:/Users/Red/dondo-bot/app/controllers/v1/whatsapp_bot_controller.rb:27: dynamic constant assignment
+    TWILIO_CLIENT = Twilio::REST::Client.new(
+    ^~~~~~~~~~~~~
+):
+  
+app/controllers/v1/whatsapp_bot_controller.rb:27: dynamic constant assignment
+app/controllers/v1/whatsapp_bot_controller.rb:27: dynamic constant assignment
+Started GET "/v1/whatsapp_bot" for 127.0.0.1 at 2023-02-04 10:33:37 +0000
+  
+SyntaxError (C:/Users/Red/dondo-bot/app/controllers/v1/whatsapp_bot_controller.rb:27: dynamic constant assignment
+    TWILIO_CLIENT = Twilio::REST::Client.new(
+    ^~~~~~~~~~~~~
+):
+  
+app/controllers/v1/whatsapp_bot_controller.rb:27: dynamic constant assignment
+app/controllers/v1/whatsapp_bot_controller.rb:27: dynamic constant assignment
+Started GET "/v1/whatsapp_bot" for 127.0.0.1 at 2023-02-04 10:33:53 +0000
+  
+SyntaxError (C:/Users/Red/dondo-bot/app/controllers/v1/whatsapp_bot_controller.rb:25: dynamic constant assignment
+    TWILIO_CLIENT = Twilio::REST::Client.new(
+    ^~~~~~~~~~~~~
+):
+  
+app/controllers/v1/whatsapp_bot_controller.rb:25: dynamic constant assignment
+app/controllers/v1/whatsapp_bot_controller.rb:25: dynamic constant assignment

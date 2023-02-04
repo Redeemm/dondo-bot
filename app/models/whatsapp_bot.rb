@@ -1,4 +1,4 @@
 class WhatsappBot < ApplicationRecord
-  def WhatsappBot
+  def whatsapp_bot
   end
 end
